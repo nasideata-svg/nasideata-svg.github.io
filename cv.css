@@ -1,0 +1,83 @@
+
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Three-column Flexbox layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Column design */
+.column {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+/* Headings */
+h2 {
+    color: navy;
+    border-bottom: 2px solid navy;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #444;
+}
+
+/* Lists */
+li {
+    margin-bottom: 10px;
+}
+
+/* Email link */
+a {
+    color: navy;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .column {
+        padding: 15px;
+    }
+}
